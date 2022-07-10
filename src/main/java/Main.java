@@ -18,17 +18,20 @@ public class Main {
 
         ShoppingCart shoppingCart = new ShoppingCart(foods);
 
-        System.out.println("Общая сумма всех товаров без скидки: "+ String.format("%.2f",shoppingCart.getSumWithoutDiscount()) + "\n");
+        System.out.println("Общая сумма всех товаров без скидки: "+
+                String.format("%.2f",shoppingCart.getSumWithoutDiscount()) + "\n");
 
         //выводится именно скидка, а не конечная стоимость со скидкой
         System.out.println("Сумма скидки для всей корзины: " + String.format("%.2f",shoppingCart.getDiscount()) + "\n");
 
         /* из формулировки не очень понял - может, в ТЗ это имелось в виду?
         стоимость всех товаров в корзине со скидкой
-        System.out.println("Сумма скидки для всей корзины: " + String.format("%.2f",shoppingCart.getSumWithDiscount()) + "\n");
+        System.out.println("Сумма скидки для всей корзины: " +
+        String.format("%.2f",shoppingCart.getSumWithDiscount()) + "\n");
          */
 
-        System.out.println("Сумма всех вегетарианских продуктов без скидки: " + String.format("%.2f",shoppingCart.getSumVegetarianWithoutDiscount()) + "\n");
+        System.out.println("Сумма всех вегетарианских продуктов без скидки: " +
+                String.format("%.2f",shoppingCart.getSumVegetarianWithoutDiscount()) + "\n");
 
     }
 }

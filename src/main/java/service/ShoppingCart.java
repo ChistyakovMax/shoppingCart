@@ -38,7 +38,7 @@ public class ShoppingCart implements Discountable {
         return sum;
     }
 
-    @Override //создал метод getDiscount для подсчёта скидки. Это будет работать быстрее, чем сумма() - суммаСоСкидкой() ?
+    @Override //создал метод getDiscount для подсчёта скидки.Это будет работать быстрее, чем сумма() - суммаСоСкидкой()?
     public float getDiscount() {
         float sum = 0.0F;
         for(Food f: foodList){
