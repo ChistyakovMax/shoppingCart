@@ -16,6 +16,8 @@ public abstract class Food implements Discountable{
         return this.price;
     }
 
+    public int getAmount() {return this.amount;}
+
     public boolean isVegetarian(){
         return isVegetarian;
     }

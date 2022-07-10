@@ -17,7 +17,7 @@ public class ShoppingCart implements Discountable {
     public float getSumWithoutDiscount(){
         float sum = 0.0F;
         for(Food f: foodList){
-            sum += f.getPrice();
+            sum += f.getPrice()*f.getAmount();
         }
         return sum;
     }
@@ -25,7 +25,7 @@ public class ShoppingCart implements Discountable {
     public float getSumWithDiscount(){
         float sum = 0.0F;
         for(Food f: foodList){
-            sum += f.getPrice() - f.getDiscount();
+            sum += (f.getPrice() - f.getDiscount())*f.getAmount();
         }
         return sum;
     }
@@ -33,7 +33,7 @@ public class ShoppingCart implements Discountable {
     public float getSumVegetarianWithoutDiscount(){
         float sum = 0.0F;
         for(Food f: foodList){
-            if (f.isVegetarian()) sum += f.getPrice();
+            if (f.isVegetarian()) sum += f.getPrice()*f.getAmount();
         }
         return sum;
     }
@@ -42,7 +42,7 @@ public class ShoppingCart implements Discountable {
     public float getDiscount() {
         float sum = 0.0F;
         for(Food f: foodList){
-            sum += f.getDiscount();
+            sum += f.getDiscount()*f.getAmount();
         }
         return sum;
     }
