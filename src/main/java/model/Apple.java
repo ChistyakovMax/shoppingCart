@@ -18,6 +18,7 @@ public class Apple extends Food{
     public float getDiscount() {
         float discount = Discount.NO_DISCOUNT;
         if (Objects.equals(this.colour, Colour.RED)) { //сделал сравнение через equals
+
             discount = Discount.PART_DISCOUNT/100.00F;
         }
         return discount*this.price;

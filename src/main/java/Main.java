@@ -32,6 +32,7 @@ public class Main {
 
         System.out.println("Сумма всех вегетарианских продуктов без скидки: " +
                 String.format("%.2f",shoppingCart.getSumVegetarianWithoutDiscount()) + "\n");
+        System.out.println(1000 / 100 % 7 * 2);
 
     }
 }
